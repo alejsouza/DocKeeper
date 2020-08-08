@@ -7,10 +7,6 @@ It was created based on startup projects from [ASP.NET Boilerplate](https://aspn
 [ASP.NET Core & Angular](https://aspnetboilerplate.com/Pages/Documents/Zero/Startup-Template-Angular) (single page application).
  
 User Interface is based on [AdminLTE theme](https://github.com/ColorlibHQ/AdminLTE).
- 
-# Download
-
-Create & download your project from https://aspnetboilerplate.com/Templates
 
 # Screenshots
 
