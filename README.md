@@ -1,13 +1,10 @@
-# Important
+# Basic Documentation System
 
-Issues of this repository are tracked on https://github.com/aspnetboilerplate/aspnetboilerplate. Please create your issues on https://github.com/aspnetboilerplate/aspnetboilerplate/issues.
+**ASP.NET Core MVC / Angular**
 
-# Introduction
+It was created based on startup projects from [ASP.NET Boilerplate](https://aspnetboilerplate.com/Pages/Documents). 
 
-This is a template to create **ASP.NET Core MVC / Angular** based startup projects for [ASP.NET Boilerplate](https://aspnetboilerplate.com/Pages/Documents). It has 2 different versions:
-
-1. [ASP.NET Core MVC & jQuery](https://aspnetboilerplate.com/Pages/Documents/Zero/Startup-Template-Core) (server rendered multi-page application).
-2. [ASP.NET Core & Angular](https://aspnetboilerplate.com/Pages/Documents/Zero/Startup-Template-Angular) (single page application).
+[ASP.NET Core & Angular](https://aspnetboilerplate.com/Pages/Documents/Zero/Startup-Template-Angular) (single page application).
  
 User Interface is based on [AdminLTE theme](https://github.com/ColorlibHQ/AdminLTE).
  
