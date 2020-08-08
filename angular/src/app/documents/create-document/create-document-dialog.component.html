@@ -1,0 +1,31 @@
+<form class="form-horizontal" autocomplete="off" #createDocumentModal="ngForm" (ngSubmit)="save()">
+    <abp-modal-header [title]="'CreateNewDocument' | localize" (onCloseClick)="bsModalRef.hide()"></abp-modal-header>
+    <div class="modal-body">
+        <tabset>
+            <tab [heading]="'DocumentDetails' | localize" class="pt-3 px-2">
+                <div class="form-group row required">
+                    <label class="col-md-3 col-form-label" for="name">{{ "Name" | localize }}</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="name" id="name" required maxlength="32" [(ngModel)]="document.name" #nameModel="ngModel" #nameEl />
+                        <abp-validation-summary [control]="nameModel" [controlEl]="nameEl"></abp-validation-summary>
+                    </div>
+                </div>
+                <div class="form-group row required">
+                    <label class="col-md-3 col-form-label" for="location">{{ "Location" | localize }}</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="location" id="location" required maxlength="32" [(ngModel)]="document.location" #locationModel="ngModel" #locationEl />
+                        <abp-validation-summary [control]="locationModel" [controlEl]="locationEl"></abp-validation-summary>
+                    </div>
+                </div>
+                <div class="form-group row required">
+                    <label class="col-md-3 col-form-label" for="description">{{ "Location" | localize }}</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="description" id="description" required maxlength="32" [(ngModel)]="document.description" #descriptionModel="ngModel" #descriptionEl />
+                        <abp-validation-summary [control]="descriptionModel" [controlEl]="descriptionEl"></abp-validation-summary>
+                    </div>
+                </div>
+            </tab>
+        </tabset>
+    </div>
+    <abp-modal-footer [cancelDisabled]="saving" [saveDisabled]="!createDocumentModal.form.valid || saving" (onCancelClick)="bsModalRef.hide()"></abp-modal-footer>
+</form>
